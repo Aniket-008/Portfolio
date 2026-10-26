@@ -3,6 +3,7 @@ import { ArrowDown, Sparkles, Terminal, Code2, Database, Cpu } from 'lucide-reac
 import { SocialIcon } from './Icons';
 import { PERSONAL_INFO } from '../data/portfolioData';
 import { getActiveSocialLinks, formatProfileHref } from '../data/socialLinks';
+import avatar3d from '../assets/avatar-3d.jpg';
 
 interface HeroProps {
   reducedMotion: boolean;
@@ -190,7 +191,7 @@ export const Hero: React.FC<HeroProps> = ({ reducedMotion }) => {
             {/* 3D Character Render Image */}
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#07080d] border border-white/10 group">
               <img
-                src="/avatar-3d.jpg"
+                src={avatar3d}
                 alt="Aniket Kumar — 3D Developer Avatar"
                 className="w-full h-full object-cover object-center transform transition-transform duration-700 group-hover:scale-105"
                 loading="eager"
